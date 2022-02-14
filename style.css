@@ -47,3 +47,65 @@ h2 {
   min-height: 100px;
   text-align: center;
 }
+#projects {
+  background-color: hsl(var(--theme-color2, 100), 50%, 100%);
+  padding-bottom: 20px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+}
+
+#projects h2 {
+  margin-bottom: 30px;
+}
+
+#projects-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 6vw;
+  grid-row-gap: 6vh;
+  max-width: 900px;
+  margin-left: 20vw;
+  margin-right: 20vw;
+  justify-items: center;
+  align-items: center;
+}
+
+#projects img {
+  width: 100%;
+  height: 100%;
+}
+
+#projects-content a {
+  display: grid;
+  grid-template-rows: 1fr 35px;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+  border-style: solid;
+  width: 300px;
+  height: 210px;
+  text-decoration: none;
+  color: black;
+  border-width: 2px;
+  border-style: outset;
+  border-color: hsl(var(--theme-color, 100), 0%, 20%);
+  background-color: hsl(var(--theme-color, 100), 0%, 95%);
+}
+
+#show-all {
+  border: solid;
+  border-width: 1px;
+  border-radius: 15px;
+  text-decoration: none;
+  padding: 7px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 25px;
+  text-align: center;
+  color: black;
+  border-color: hsl(var(--theme-color, 100), 50%, 72%);
+  background-color: hsl(var(--theme-color, 100), 0%, 95%);
+}
