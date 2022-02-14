@@ -109,3 +109,42 @@ h2 {
   border-color: hsl(var(--theme-color, 100), 50%, 72%);
   background-color: hsl(var(--theme-color, 100), 0%, 95%);
 }
+#show-all:hover {
+  animation-name: show-all-bg;
+  animation-duration: 600ms;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+}
+
+@keyframes show-all-bg {
+  50% {
+    background-color: hsl(var(--theme-color, 100), 90%, 80%);
+    transform: scale(1.05);
+  }
+  100% {
+    background-color: hsl(var(--theme-color, 100), 50%, 87%);
+    transform: scale(1.1);
+  }
+}
+
+#contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 280px;
+}
+
+#contacts h2 {
+  margin-top: 50px;
+  margin-bottom: 0px;
+}
+#contacts p {
+  margin-bottom: 30px;
+}
+
+#contacts-content {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
